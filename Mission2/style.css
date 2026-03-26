@@ -1,0 +1,232 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: rgb(240, 242, 245);
+ }
+
+ #big_container {
+
+     border: 2px solid black;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+     overflow: auto;
+     width: 90%;
+     max-width: 1000px;
+     margin: 50px auto;
+     border-radius: 20px;
+     padding: 20px;
+ }
+
+ @media(max-width: 600px){
+     #big_container{
+         width: 95%;
+         padding: 10px;
+         margin: 20px auto;
+         
+     }
+ }
+
+
+ #header {
+     display: flex;
+     background: linear-gradient(to right, rgb(58, 110, 196), rgb(67, 114, 196));
+     color: white;
+     align-items: flex-start;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 20px;
+
+
+
+ }
+
+ #cards {
+     border: 2px solid black;
+     background-color: #FEFEFE;
+     border-radius: 20px;
+     min-width: 120px;
+
+     display: flex;
+     flex-wrap: wrap;
+     gap: 24px;
+     padding: 10px;
+     justify-content: space-around;
+
+ }
+
+ #card1 {
+     border: 2px solid black;
+     background-color: rgb(52, 168, 83);
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     border-radius: 20px;
+     height: 75px;
+     width: 200px;
+     margin-top: 10px;
+
+ }
+
+ #card2 {
+     border: 2px solid black;
+     background-color: rgb(234, 67, 53);
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     border-radius: 20px;
+     height: 75px;
+     width: 200px;
+     margin-top: 10px;
+
+ }
+
+ #card3 {
+     border: 2px solid black;
+     background-color: rgb(66, 133, 244);
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     border-radius: 20px;
+     height: 75px;
+     width: 200px;
+     margin-top: 10px;
+
+ }
+
+ button {
+     background-color: rgb(66, 133, 244);
+     color: white;
+     border-radius: 20px;
+     cursor: pointer;
+
+ }
+
+ button:hover {
+     background-color: blue;
+ }
+
+ #add_expense_container {
+     border: 2px solid black;
+     margin-top: 20px;
+     border-radius: 20px;
+     display: flex;
+
+
+
+     flex-wrap: wrap;
+         gap: 10px;
+     justify-content: center;
+     padding: 10px;
+   
+ }
+
+ #add_expense_container input {
+     border-radius: 20px;
+     padding: 8px;
+     width: 150px;
+ }
+
+ #add_expense_container button {
+     padding: 8px 12px;
+ }
+
+ #Expense_container {
+     border: 2px solid black;
+     border-radius: 20px;
+     min-height: 200px;
+     margin-top: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-evenly;
+     gap: 10px;
+     padding: 10px;
+
+ }
+
+ #expense_list1 {
+     border: 2px solid black;
+     background-color: #FEFEFE;
+     justify-content: center;
+     text-align: center;
+     margin-top: 20px;
+     height: 250px;
+     width: 40%;
+     border-radius: 20px;
+}
+
+ #expense_list1 h3 {
+     padding-bottom: 5px;
+     border-bottom: 2px solid #ccc;
+
+ }
+
+ #expense_txt {
+     margin-top: 10px;
+ }
+
+ #list button {
+     background: transparent;
+     border: none;
+     color: red;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ #list button:hover {
+     color: darkred;
+ }
+
+ #expense_list2 {
+     border: 2px solid black;
+     background-color: #FEFEFE;
+     justify-content: center;
+     text-align: center;
+     margin-top: 20px;
+     height: 250px;
+     width: 250px;
+     border-radius: 20px;
+     width: 40%;
+ }
+
+ #add_expense_container input {
+     padding: 8px;
+     width: 150px;
+
+ }
+
+ #add_expense_container button {
+     padding: 8px 12px;
+ }
+
+
+ #expense_list2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ @media (max-width: 768px) {
+     #Expense_container {
+         flex-direction: column;
+         align-items: center;
+     }
+     #expense_list1,
+     #expense_list2 {
+         width: 100%;
+     }
+ }
+
+ #list {
+     list-style: none;
+ }
+
+ #myChart {
+    width: 200px!important;
+     height: 200px !important;
+ }

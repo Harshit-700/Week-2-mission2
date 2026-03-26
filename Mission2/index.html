@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="big_container">
+        <div id="header">
+            <header>
+                <h3>CashFlow Tracker</h3>
+            </header>
+            <hr>
+        </div>
+        
+        <div id="cards">
+            <div id="card1">
+                <h2>Total Salary</h2>
+            </div>
+            <div id="card2">
+                <h2>Total Expense</h2>
+            </div>
+            <div id="card3">
+                <h2>Remaining Balance</h2>
+            </div>
+        </div>
+
+        <div id="add_expense_container">
+            <h2>Add Expense</h2>
+            <input type="number" placeholder="Enter Salary" id="salary">
+            <button id="set_salary_btn">Set Salary</button>
+            <input type="text" placeholder="Expense Name" id="expense_name">
+            <input type="number" placeholder="Amount" id="amount">
+            <button id="add_expense_btn">Add Expense</button>
+        </div>
+
+        <div id="Expense_container">
+            <div id="expense_list1">
+                <h3 id="expense_txt">Expense List</h3>
+                <ul id="list"></ul>
+            </div>
+
+            <div id="expense_list2">
+                <h3>Expense vs Savings</h3>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
