@@ -8,7 +8,7 @@ A clean, responsive expense tracking web app that helps you  to manage your sala
 
 ## 📸  Screenshot
 
-
+![App Screenshot](screenshot(412).png)
 
 ---
 
